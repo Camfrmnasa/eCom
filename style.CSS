@@ -1,0 +1,231 @@
+* Font family *
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background: rgb(333);
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-image: url(homeIMGs/pumpkin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.product-grid{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.product-grid img{
+  height: 650px;
+  width: 400px;
+}
+.product{
+  flex: 1;
+  margin: 1px;
+}
+h1 {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 3px 3px black;
+    font-size: 77px;
+}
+.container {
+    background-color: floralwhite;
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+}
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+.circle {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+.circle button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: rgb(194, 111, 23);
+}
+
+.circle button:focus{
+    outline: none;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.content {
+    max-width: 100%;
+    margin: 50px auto;
+}
+
+nav {
+    position: sticky;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: rgb(209, 83, 15);
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+nav ul li + li + li{
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+nav a {
+    color: #fafafa;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+nav a:hover{
+    color: rgb(255, 102, 0);
+    font-weight: bold;
+}
+
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+body{
+background-image: url(pics/pumpkin.jpeg);
+background-position:relative ;
+background-image: linear;
+background-position: center;  
+ }
+
+ img{
+  height: 30%;
+  width: 50%;
+  object-fit: cover;
+ }
+ #contact_form {
+    background-color: #413b10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top:50px
+    }
+  
+  .row label{
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-left: 50px;
+  }
+  
+  
+  input[type=text] {
+    height: 25px;
+  }
+  
+  input[type=submit] {
+    background-color: #b86229;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 5px #3e4444;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+  }
+footer{
+    height: 100px;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 10px;
+    margin-top: 200px;
+  }
+  .footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer_content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 10px;
+    font-size: 19px;
+  text-decoration: none;
+  }
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+    margin:20px;
+  }
+  
+  .footer-bottom{
+    background: #000;
+  }
+
+
+
+
+
+
